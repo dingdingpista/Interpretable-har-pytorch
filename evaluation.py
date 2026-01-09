@@ -84,3 +84,40 @@ plt.savefig("results/confusion_matrix.png")
 plt.show()
 
 print("\nConfusion matrix saved to results/confusion_matrix.png")
+
+# --- Sample Predictions (True vs Predicted) ---
+import pandas as pd
+
+model.eval()
+samples = []
+
+with torch.no_grad():
+    for inputs, labels in test_loader:
+        inputs = inputs.to(device)
+        outputs = model(inputs)
+        preds = torch.argmax(outputs, dim=1)
+
+        for i in range(min(10, len(labels))):
+            samples.append({
+                "True Activity": activity_names[labels[i].item()],
+                "Predicted Activity": activity_names[preds[i].item()]
+            })
+        break  # only first batch
+
+df = pd.DataFrame(samples)
+
+# Save table as image
+plt.figure(figsize=(7, 3))
+plt.axis("off")
+plt.table(
+    cellText=df.values,
+    colLabels=df.columns,
+    loc="center",
+    cellLoc="center"
+)
+plt.title("Sample Predictions (True vs Predicted)", pad=20)
+plt.savefig("results/sample_predictions.png", bbox_inches="tight")
+plt.close()
+
+print("Sample predictions saved to results/sample_predictions.png")
+
