@@ -1,5 +1,7 @@
 # Interpretable Human Activity Recognition (HAR) using PyTorch
 
+<img width="342" height="257" alt="Screenshot 2026-01-09 at 7 25 39 PM" src="https://github.com/user-attachments/assets/9da08c2a-4026-46e2-abfa-363595b927fb" />
+
 <img width="579" height="471" alt="Screenshot 2026-01-09 at 7 12 20 PM" src="https://github.com/user-attachments/assets/6a7da43f-f166-4837-bca1-d037be7f004f" />
 
 
@@ -86,7 +88,9 @@ True: Walking (0) → Predicted: Walking (0) [✓]
 True: Sitting (3) → Predicted: Standing (4) [✗]
 
 True: Laying (5) → Predicted: Laying (5) [✓]
- 
+
+<img width="345" height="184" alt="Screenshot 2026-01-09 at 7 35 21 PM" src="https://github.com/user-attachments/assets/2fa02dd5-7787-4ad9-aeb5-592703225758" />
+
 Conv1 Filters reveal learned motion patterns across sensors:
 
 
