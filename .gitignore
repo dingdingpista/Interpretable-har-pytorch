@@ -1,0 +1,13 @@
+# Ignore Python cache
+__pycache__/
+
+# Ignore dataset
+UCI HAR Dataset/
+*.txt
+
+# Ignore results/checkpoints
+results/
+*.pth
+
+# Ignore Colab notebooks checkpoints
+.ipynb_checkpoints/
