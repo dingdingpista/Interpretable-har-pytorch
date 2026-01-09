@@ -76,10 +76,14 @@ python train.py
 python evaluation.py
 
 ```
-📈 Results
+## 📈 Results
+
 Sample Predictions:
+
 True: Walking (0) → Predicted: Walking (0) [✓]
+
 True: Sitting (3) → Predicted: Standing (4) [✗]
+
 True: Laying (5) → Predicted: Laying (5) [✓]
  
 Conv1 Filters reveal learned motion patterns across sensors:
@@ -87,6 +91,7 @@ Conv1 Filters reveal learned motion patterns across sensors:
 
 
 
+<img width="843" height="376" alt="Screenshot 2026-01-09 at 7 10 18 PM" src="https://github.com/user-attachments/assets/2a66a836-53fb-4aa0-b29e-69089411a3e2" />
 
 
 
@@ -94,7 +99,9 @@ Conv1 Filters reveal learned motion patterns across sensors:
 
 
 
-🔮 Future Work:
+
+
+## 🔮 Future Work:
 
  LSTM/Transformer variants
 
