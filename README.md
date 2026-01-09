@@ -1,6 +1,7 @@
 # Interpretable Human Activity Recognition (HAR) using PyTorch
 
-![HAR Illustration](results/confusion_matrix.png)
+<img width="579" height="471" alt="Screenshot 2026-01-09 at 7 12 20 PM" src="https://github.com/user-attachments/assets/6a7da43f-f166-4837-bca1-d037be7f004f" />
+
 
 **Test Accuracy: 90.09%** on UCI HAR Dataset (6 activities)
 
@@ -39,8 +40,8 @@ Input shape: `(batch, 9, 128)` - 9 channels × 128 timesteps.
 | Top-2 Accuracy  | 97.2%   |
 | Macro-F1        | 89.8%   |
 
-![Training Curve](results/training_curve.png)
-![Confusion Matrix](results/confusion_matrix.png)
+<img width="583" height="469" alt="Screenshot 2026-01-09 at 7 13 19 PM" src="https://github.com/user-attachments/assets/2b96a58f-7fe6-40c3-a808-3e244f0d1041" />
+
 
 **Beats baseline Random Forest (85.2%)** and matches CNN literature benchmarks.
 
@@ -103,13 +104,13 @@ Conv1 Filters reveal learned motion patterns across sensors:
 
 ## 🔮 Future Work:
 
- LSTM/Transformer variants
+1. LSTM/Transformer variants
 
- SHAP/LIME interpretability
+2. SHAP/LIME interpretability
 
- Real-time inference pipeline
+3. Real-time inference pipeline
 
- Cross-subject evaluation
+4. Cross-subject evaluation
 
- Mobile deployment (TorchScript)
+5. Mobile deployment (TorchScript)
 
